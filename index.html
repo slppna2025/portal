@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- SLPPNA Portal v3 - 20260506152557 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -139,8 +140,8 @@ footer { text-align: center; padding: 12px; font-size: 11px; color: rgba(255,255
     <div class="modal-av">EV</div>
     <h3>Welcome, Edie P Vandy</h3>
     <p>Select which tracker to open</p>
-    <button class="mbtn" style="background:#1B5E35;" onclick="go('https://slppna2025.github.io/meeting-tracker')">Chapter SG Meeting Tracker</button>
-    <button class="mbtn" style="background:#1A50A0;" onclick="go('https://slppna2025.github.io/rsg-tracker')">RSG Meeting Tracker</button>
+    <button class="mbtn" style="background:#1B5E35;" onclick="go('https://slppna2025.github.io/meeting-tracker/')">Chapter SG Meeting Tracker</button>
+    <button class="mbtn" style="background:#1A50A0;" onclick="go('https://slppna2025.github.io/rsg-tracker/')">RSG Meeting Tracker</button>
     <button class="mbtn" onclick="closeModal()">Cancel</button>
   </div>
 </div>
@@ -188,7 +189,7 @@ function loginSG() {
   var u = document.getElementById('sg-u').value.trim().toUpperCase();
   var p = document.getElementById('sg-p').value.trim();
   if (SG[u] && p === SGP) {
-    window.location.href = 'https://slppna2025.github.io/meeting-tracker';
+    window.location.href = 'https://slppna2025.github.io/meeting-tracker/';
   } else {
     showErr('e-sg');
   }
@@ -198,7 +199,7 @@ function loginReg() {
   var u = document.getElementById('reg-u').value.trim().toLowerCase();
   var p = document.getElementById('reg-p').value.trim();
   if (REG[u] && p === REGP) {
-    window.location.href = 'https://slppna2025.github.io/rsg-tracker';
+    window.location.href = 'https://slppna2025.github.io/rsg-tracker/';
   } else {
     showErr('e-reg');
   }
