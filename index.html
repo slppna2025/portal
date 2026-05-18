@@ -87,7 +87,7 @@ footer { text-align: center; padding: 12px; font-size: 11px; color: rgba(255,255
     </div>
     <button class="lbtn green" onclick="loginSG()">Log In</button>
   </div>
-  <div class="hint">Username: chapter code &nbsp;·&nbsp; Contact RSG office for password</div>
+  <div class="hint">Username: chapter code (e.g. DRC, NYC, AZC) &nbsp;·&nbsp; Password: slppna2026</div>
   <div class="errmsg" id="e-sg">Incorrect chapter code or password.</div>
 </div>
 
@@ -104,7 +104,7 @@ footer { text-align: center; padding: 12px; font-size: 11px; color: rgba(255,255
     </div>
     <button class="lbtn gold" onclick="loginReg()">Log In</button>
   </div>
-  <div class="hint">Contact the RSG office for your login credentials</div>
+  <div class="hint">Usernames: dpessima · sbenjamin · lagba · egeorge · dmacarthy · fmaclengor · jvandi · pkoroma · lkpandeyenge · abanya · mkallon · jkabangai · dlahai &nbsp;·&nbsp; Password: rsg2026</div>
   <div class="errmsg" id="e-reg">Incorrect username or password.</div>
 </div>
 
@@ -121,7 +121,7 @@ footer { text-align: center; padding: 12px; font-size: 11px; color: rgba(255,255
     </div>
     <button class="lbtn blue" onclick="loginAdmin()">Log In</button>
   </div>
-  <div class="hint">Admin access — RSG office only</div>
+  <div class="hint">Username: evandy &nbsp;·&nbsp; Password: admin2026</div>
   <div class="errmsg" id="e-adm">Incorrect admin credentials.</div>
 </div>
 
@@ -189,7 +189,7 @@ function loginSG() {
   var u = document.getElementById('sg-u').value.trim().toUpperCase();
   var p = document.getElementById('sg-p').value.trim();
   if (SG[u] && p === SGP) {
-    window.location.href = 'https://slppna2025.github.io/meeting-tracker/';
+    window.location.href = 'https://slppna2025.github.io/meeting-tracker/?ch=' + u;
   } else {
     showErr('e-sg');
   }
